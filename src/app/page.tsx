@@ -39,8 +39,6 @@ export default function Home() {
             </p>
             <ul className="list-disc list-inside space-y-2">
               <li>Customizable components</li>
-              <li>Dark mode support</li>
-              <li>Accessibility-first design</li>
               <li>Easy to integrate with Next.js</li>
             </ul>
           </CardContent>

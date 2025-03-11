@@ -1,6 +1,6 @@
 # nextjs-shadcn-template
 
-A simple template with Next.js 15 and shadcn/ui. Build by LikeDreamwalker with Vercel, v0 and love❤️.
+A simple template with Next.js 15 and shadcn/ui. Build by LikeDreamwalker with love❤️.
 
 ## Getting Started
 
