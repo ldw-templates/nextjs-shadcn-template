@@ -1,14 +1,9 @@
-import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
-import { ThemeButton } from "@/components/theme-button";
+import { DemoCard } from "@/components/demo-card";
 
 export default async function HomePage() {
-  const t = await getTranslations("HomePage");
   return (
-    <div>
-      <h1>{t("title")}</h1>
-      <Link href="/about">{t("about")}</Link>
-      <ThemeButton />
-    </div>
+    <main className="min-h-screen bg-background">
+      <DemoCard />
+    </main>
   );
 }

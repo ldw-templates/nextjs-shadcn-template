@@ -1,29 +1,23 @@
-import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { CounterStoreProvider } from "@/providers/counter-store-provider";
+import { StoreProvider } from "@/providers/store-provider";
 import "./globals.css";
-export default async function Layout({
+
+export default async function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <NextIntlClientProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <CounterStoreProvider>{children}</CounterStoreProvider>
-          </ThemeProvider>
-        </NextIntlClientProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <StoreProvider>{children}</StoreProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
