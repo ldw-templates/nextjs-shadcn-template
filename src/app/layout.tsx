@@ -1,7 +1,6 @@
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import { ThemeProvider } from "@/components/theme-provider";
+import { NextIntlClientProvider } from "next-intl";
+import { ThemeProvider } from "@/providers/theme-provider";
+import { CounterStoreProvider } from "@/providers/counter-store-provider";
 import "./globals.css";
 export default async function Layout({
   children,
@@ -22,7 +21,7 @@ export default async function Layout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <CounterStoreProvider>{children}</CounterStoreProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
