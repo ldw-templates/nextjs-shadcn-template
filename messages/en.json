@@ -5,12 +5,12 @@
     "description": "This template includes Next.js 15, shadcn/ui, Zustand, next-themes, and next-intl internationalization. Perfect for kickstarting your next project with powerful i18n support.",
     "features": {
       "title": "Included Features",
-      "theming": "🎨 Dark/Light theming with next-themes",
-      "i18n": "🌍 Internationalization with next-intl",
-      "state": "📦 Zustand state management",
-      "ui": "🎯 shadcn/ui components",
-      "typescript": "💼 TypeScript support",
-      "tailwind": "🎨 Tailwind CSS"
+      "theming": "Dark/Light theming with next-themes",
+      "i18n": "Internationalization with next-intl",
+      "state": "Zustand state management",
+      "ui": "shadcn/ui components",
+      "typescript": "TypeScript support",
+      "tailwind": "Tailwind CSS"
     },
     "demo": {
       "title": "Zustand Store Demo",
@@ -20,8 +20,8 @@
     },
     "creator": {
       "title": "About Creator",
-      "name": "LIKEDREAMWALKER",
-      "description": "A passionate developer who loves Next.js and modern web technologies",
+      "name": "Alan Yuan",
+      "role": "Full-stack Engineer",
       "homepage": "Homepage",
       "github": "GitHub Profile",
       "repository": "Repository"
