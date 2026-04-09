@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Languages } from "lucide-react";
 import { useLocale } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname } from "@/i18n/navigation";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -24,21 +24,19 @@ export function LanguageSelector() {
   const pathname = usePathname();
 
   const switchLanguage = (newLocale: string) => {
-    // Remove current locale from pathname and add new one
-    const segments = pathname.split("/");
-    segments[1] = newLocale; // Replace the locale segment
-    const newPathname = segments.join("/");
-    router.push(newPathname);
+    router.replace(pathname, { locale: newLocale });
   };
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
-          <Languages className="h-[1.2rem] w-[1.2rem]" />
-          <span className="sr-only">Change language</span>
-        </Button>
-      </DropdownMenuTrigger>
+      <DropdownMenuTrigger
+        render={
+          <Button variant="outline" size="icon">
+            <Languages className="h-[1.2rem] w-[1.2rem]" />
+            <span className="sr-only">Change language</span>
+          </Button>
+        }
+      />
       <DropdownMenuContent align="end">
         {Object.entries(languages).map(([code, name]) => (
           <DropdownMenuItem
