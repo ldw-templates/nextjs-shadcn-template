@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A Next.js starter template pre-configured with shadcn/ui, Tailwind CSS v4, next-intl (i18n), Zustand (state management), and next-themes (dark mode). Designed for rapid project scaffolding.
 
-**Tech stack**: Next.js 15 · React 19 · TypeScript 5 · Tailwind CSS 4 · shadcn/ui · Zustand 5 · next-intl · next-themes
+**Tech stack**: Next.js 16 · React 19 · TypeScript 6 · Tailwind CSS 4 · shadcn/ui (Base UI) · Zustand 5 · next-intl · next-themes
 
 ## Commands
 
@@ -35,7 +35,7 @@ This ensures theme/state providers are available globally while i18n is scoped t
 - **Request handler**: `src/i18n/request.ts` — locale resolution
 - **Navigation**: `src/i18n/navigation.ts` — locale-aware `Link`, `redirect`, `useRouter`, `usePathname`
 - **Translations**: `messages/en.json`, `messages/zh.json`
-- **Middleware**: `src/middleware.ts` — automatic locale detection/redirect
+- **Middleware**: `src/proxy.ts` — automatic locale detection/redirect
 - **Next.js plugin**: `next.config.ts` uses `createNextIntlPlugin()`
 
 **Important**: Always use navigation utilities from `@/i18n/navigation` instead of `next/navigation`.
@@ -56,9 +56,9 @@ Vanilla store pattern for SSR compatibility:
 
 ### shadcn/ui
 
-- Style: `new-york` · Base color: `zinc` · CSS variables enabled
+- Style: `base-nova` · Base color: `neutral` · CSS variables enabled
 - Components: `src/components/ui/` (auto-installed via CLI)
-- Radix primitives via unified `radix-ui` package
+- Base UI primitives via `@base-ui/react` package
 - Config: `components.json`
 - Utilities: `cn()` from `@/lib/utils`
 
