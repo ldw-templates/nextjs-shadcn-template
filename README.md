@@ -1,6 +1,6 @@
 # Next.js + shadcn/ui Template
 
-A modern, feature-rich template with **Next.js 15**, **shadcn/ui**, **Zustand**, **next-themes**, and **next-intl** internationalization. Perfect for kickstarting your next project with powerful built-in features.
+A modern, feature-rich template with **Next.js 16**, **shadcn/ui (Base UI)**, **Zustand**, **next-themes**, and **next-intl** internationalization. Perfect for kickstarting your next project with powerful built-in features.
 
 Built by **[LIKEDREAMWALKER](https://github.com/LikeDreamwalker)** with love ❤️
 
@@ -10,8 +10,8 @@ Check out the live demo: [nextjs-shadcn-template-alpha.vercel.app](https://nextj
 
 ## ✨ Features
 
-- 🎯 **[Next.js 15](https://nextjs.org)** - Latest React framework with App Router
-- 🎨 **[shadcn/ui](https://ui.shadcn.com)** - Beautiful and accessible UI components
+- 🎯 **[Next.js 16](https://nextjs.org)** - Latest React framework with App Router & Turbopack
+- 🎨 **[shadcn/ui](https://ui.shadcn.com)** - Beautiful and accessible UI components (Base UI)
 - 📦 **[Zustand](https://zustand-demo.pmnd.rs)** - Simple and scalable state management
 - 🌙 **[next-themes](https://github.com/pacocoursey/next-themes)** - Perfect dark mode support
 - 🌍 **[next-intl](https://next-intl-docs.vercel.app)** - Complete internationalization (English & Chinese)
@@ -24,19 +24,19 @@ Check out the live demo: [nextjs-shadcn-template-alpha.vercel.app](https://nextj
 
 | Technology   | Purpose              | Version |
 | ------------ | -------------------- | ------- |
-| Next.js      | React Framework      | 15.5.0  |
-| shadcn/ui    | UI Component Library | Latest  |
-| Zustand      | State Management     | 5.0.8   |
+| Next.js      | React Framework      | 16.2.3  |
+| shadcn/ui    | UI Component Library | Latest (Base UI) |
+| Zustand      | State Management     | 5.0.12   |
 | next-themes  | Theme Management     | 0.4.6   |
-| next-intl    | Internationalization | 4.3.4   |
-| TypeScript   | Type Safety          | 5.x     |
+| next-intl    | Internationalization | 4.9.0   |
+| TypeScript   | Type Safety          | 6.x     |
 | Tailwind CSS | Styling              | 4.x     |
 
 ## 🚦 Getting Started
 
 ### Prerequisites
 
-- Node.js 18.17 or later
+- Node.js 20.9 or later
 - pnpm (recommended) or npm/yarn
 
 ### Installation
